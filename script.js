@@ -226,7 +226,7 @@ function loadGroupImage(groupId) {
     const imgElement = document.getElementById(`img${groupLetter}`);
     
     if (imgElement) {
-        const imagePath = `table${groupLetter}.jpg`;
+        const imagePath = `table${groupLetter}.png`;
         imgElement.src = imagePath;
     }
 }
