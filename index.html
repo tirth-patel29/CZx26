@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BGMI Tournament - COGNIZANCEX '26</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-logo">⚡</div>
+            <h2>COGNIZANCEX '26</h2>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <p>Initializing Tournament...</p>
+        </div>
+    </div>
+
+    <!-- Animated Background -->
+    <div class="background-container">
+        <div class="gradient-blob blob-1"></div>
+        <div class="gradient-blob blob-2"></div>
+        <div class="gradient-blob blob-3"></div>
+        <div class="grid-background"></div>
+    </div>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-glow">⚡</span>
+                <span>CZX '26</span>
+                <span class="live-badge">LIVE</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active-indicator" data-section="home">Home</a>
+                    <span class="nav-underline"></span>
+                </li>
+                <li class="nav-item">
+                    <a href="#format" class="nav-link" data-section="format">Format</a>
+                    <span class="nav-underline"></span>
+                </li>
+                <li class="nav-item">
+                    <a href="#groups" class="nav-link" data-section="groups">Groups</a>
+                    <span class="nav-underline"></span>
+                </li>
+                <li class="nav-item">
+                    <a href="#standings" class="nav-link" data-section="standings">Leaderboard</a>
+                    <span class="nav-underline"></span>
+                </li>
+                <li class="nav-item">
+                    <a href="#coordinators" class="nav-link" data-section="coordinators">Team</a>
+                    <span class="nav-underline"></span>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="nav-indicator" id="navIndicator"></div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-spotlight" id="spotlight"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>TOURNAMENT LIVE</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-word"><span class="char">B</span><span class="char">G</span><span class="char">M</span><span class="char">I</span></span>
+                <span class="title-word"><span class="char">T</span><span class="char">O</span><span class="char">U</span><span class="char">R</span><span class="char">N</span><span class="char">A</span><span class="char">M</span><span class="char">E</span><span class="char">N</span><span class="char">T</span></span>
+            </h1>
+            <p class="hero-subtitle">COGNIZANCEX '26 – TechFest – CHARUSAT</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="60">0</span>
+                    <span class="stat-label">Teams</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="4">0</span>
+                    <span class="stat-label">Groups</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="3">0</span>
+                    <span class="stat-label">Matches</span>
+                </div>
+            </div>
+            <button class="cta-button" id="ctaButton">View Leaderboard</button>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- Tournament Format Section -->
+    <section id="format" class="format-section">
+        <div class="section-header">
+            <h2 class="section-title">Tournament Format</h2>
+            <p class="section-subtitle">How Teams Progress to Finals</p>
+        </div>
+
+        <div class="format-grid">
+            <div class="format-card">
+                <div class="format-number">1</div>
+                <h3>Group Stage</h3>
+                <p>60 teams divided into 4 groups (A, B, C, D) with 15 teams each</p>
+            </div>
+            <div class="format-arrow">→</div>
+            <div class="format-card">
+                <div class="format-number">2</div>
+                <h3>3 Matches</h3>
+                <p>Each group plays 3 competitive matches to determine standings</p>
+            </div>
+            <div class="format-arrow">→</div>
+            <div class="format-card">
+                <div class="format-number">3</div>
+                <h3>Top 4 Qualify</h3>
+                <p>Best 4 teams from each group advance to knockout finals</p>
+            </div>
+            <div class="format-arrow">→</div>
+            <div class="format-card">
+                <div class="format-number">🏆</div>
+                <h3>Champion</h3>
+                <p>Ultimate BGMI champion crowned at COGNIZANCEX '26</p>
+            </div>
+        </div>
+
+        <div class="match-highlight">
+            <div class="highlight-badge">
+                <span class="highlight-icon">🎮</span>
+                <span>Tomorrow: 12 Matches Across All Groups</span>
+            </div>
+            <p>Group A: 3 Matches | Group B: 3 Matches | Group C: 3 Matches | Group D: 3 Matches</p>
+        </div>
+    </section>
+
+    <!-- Live Leaderboard Section -->
+    <section id="standings" class="standings-section">
+        <div class="section-header">
+            <h2 class="section-title">Live Leaderboard</h2>
+            <p class="section-subtitle">Real-time tournament standings</p>
+        </div>
+
+        <!-- Tab Navigation -->
+        <div class="tabs-container">
+            <button class="tab-btn active" data-tab="groupA">
+                <span class="tab-icon">A</span>
+                <span class="tab-text">Group A</span>
+            </button>
+            <button class="tab-btn" data-tab="groupB">
+                <span class="tab-icon">B</span>
+                <span class="tab-text">Group B</span>
+            </button>
+            <button class="tab-btn" data-tab="groupC">
+                <span class="tab-icon">C</span>
+                <span class="tab-text">Group C</span>
+            </button>
+            <button class="tab-btn" data-tab="groupD">
+                <span class="tab-icon">D</span>
+                <span class="tab-text">Group D</span>
+            </button>
+        </div>
+
+        <!-- Tables for each group -->
+        <div class="tables-wrapper">
+            <!-- Group A Image -->
+            <div class="table-container active" id="groupA">
+                <div class="image-display">
+                    <img id="imgA" src="tableA.jpg" alt="Group A Leaderboard" class="leaderboard-image">
+                </div>
+            </div>
+
+            <!-- Group B Image -->
+            <div class="table-container" id="groupB">
+                <div class="image-display">
+                    <img id="imgB" src="" alt="Group B Leaderboard" class="leaderboard-image">
+                </div>
+            </div>
+
+            <!-- Group C Image -->
+            <div class="table-container" id="groupC">
+                <div class="image-display">
+                    <img id="imgC" src="" alt="Group C Leaderboard" class="leaderboard-image">
+                </div>
+            </div>
+
+            <!-- Group D Image -->
+            <div class="table-container" id="groupD">
+                <div class="image-display">
+                    <img id="imgD" src="" alt="Group D Leaderboard" class="leaderboard-image">
+                </div>
+            </div>
+        </div>
+
+        <!-- Qualification Info -->
+        <div class="qualification-info">
+            <h3>🏆 Qualification Details</h3>
+            <p>Top <span class="highlight">4 teams</span> from each group advance to the <span class="highlight">finals</span>. Teams are ranked by <span class="highlight">total points</span>, with chicken dinners as tiebreaker.</p>
+        </div>
+    </section>
+
+    <!-- Coordinators Section -->
+    <section id="coordinators" class="coordinators-section">
+        <div class="section-header">
+            <h2 class="section-title">Tournament Co-Ordinator</h2>
+            <p class="section-subtitle">Student Coordinators Behind CZX '26 BGMI Tournament</p>
+        </div>
+
+        <div class="coordinators-grid">
+            <!-- Coordinator 1 -->
+            <div class="coordinator-card" data-tilt>
+                <div class="card-glow"></div>
+                <div class="card-border-glow"></div>
+                <div class="card-content">
+                    <div class="avatar" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <span>TP</span>
+                    </div>
+                    <h3>Tirth Patel</h3>
+                    <p class="role">Student Co-ordinator</p>
+                    <p class="bio">Tournament architect & passionate esports enthusiast</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">📱</a>
+                        <a href="#" class="social-icon">💼</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coordinator 2 -->
+            <div class="coordinator-card" data-tilt>
+                <div class="card-glow"></div>
+                <div class="card-border-glow"></div>
+                <div class="card-content">
+                    <div class="avatar" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <span>KD</span>
+                    </div>
+                    <h3>Kavya Desai</h3>
+                    <p class="role">Student Co-ordinator</p>
+                    <p class="bio">Event strategist & community engagement leader</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">📱</a>
+                        <a href="#" class="social-icon">💼</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 COGNIZANCEX – TechFest – CHARUSAT</p>
+            <p>BGMI Tournament | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
