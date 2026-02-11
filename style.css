@@ -646,14 +646,11 @@ body {
 }
 
 .format-grid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5rem;
     max-width: 1400px;
     margin: 3rem auto;
-    flex-wrap: nowrap;
-    overflow-x: auto;
     padding: 0 2rem;
 }
 
@@ -701,7 +698,7 @@ body {
 .format-arrow {
     font-size: 2rem;
     color: var(--primary);
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     animation: arrowPulse 1.5s ease-in-out infinite;
